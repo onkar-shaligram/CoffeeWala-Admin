@@ -31,6 +31,7 @@ class Home extends StatelessWidget {
           ],
         ),
         body: Container(
+          color: Colors.black,
           child: BrewList(),
         ),
       ),
