@@ -5,10 +5,8 @@ import 'package:coffeewala_admin/screens/services/database.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-    
     return StreamProvider<List<Brew>>.value(
       value: DatabaseService().brews,
       child: Scaffold(
@@ -18,7 +16,6 @@ class Home extends StatelessWidget {
           title: Text("CW -- Admin"),
           elevation: 1.0,
           actions: <Widget>[
-
             FlatButton.icon(
               onPressed: () async {
                 Navigator.pushNamed(context, '/archives');
@@ -38,3 +35,5 @@ class Home extends StatelessWidget {
     );
   }
 }
+
+

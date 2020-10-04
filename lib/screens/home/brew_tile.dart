@@ -24,10 +24,46 @@ class BrewTile extends StatelessWidget {
             Text(' Snacks - ${brew.snacks}'),
           ],),
           onTap: () {
-            
+            showAlertDialog(context);
           },
         ),
       ),
     );
   }
+}
+
+
+showAlertDialog(BuildContext context) {
+  // set up the buttons
+  Widget cancelButton = FlatButton(
+    child: Text("NO"),
+    onPressed: () {
+      Navigator.pop(context);
+    },
+  );
+  Widget continueButton = FlatButton(
+    child: Text("YES"),
+    onPressed: () {
+      
+    },
+  );
+
+  // set up the AlertDialog
+  AlertDialog alert = AlertDialog(
+    title: Text("Is this Order finished?"),
+    content:
+        Text("This will send the card to archives list."),
+    actions: [
+      cancelButton,
+      continueButton,
+    ],
+  );
+
+  // show the dialog
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );
 }
