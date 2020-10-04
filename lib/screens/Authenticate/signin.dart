@@ -24,11 +24,11 @@ class _SignInState extends State<SignIn> {
     return loading
         ? Loading()
         : Scaffold(
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.black,
             appBar: AppBar(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.blue[400],
               elevation: 0.0,
-              title: Text('Sign in CW Admin'),
+              title: Text('Sign in to CW admin'),
               actions: <Widget>[
                 FlatButton.icon(
                     onPressed: () {
@@ -60,11 +60,11 @@ class _SignInState extends State<SignIn> {
                           });
                         },
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                         decoration: InputDecoration(
                             hintText: "Email",
-                            hintStyle: TextStyle(color: Colors.black54)),
+                            hintStyle: TextStyle(color: Colors.white54)),
                       ),
                       SizedBox(
                         height: 20.0,
@@ -78,10 +78,10 @@ class _SignInState extends State<SignIn> {
                             password = val;
                           });
                         },
-                        style: TextStyle(color: Colors.black),
+                        style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
                             hintText: "Password",
-                            hintStyle: TextStyle(color: Colors.black54)),
+                            hintStyle: TextStyle(color: Colors.white54)),
                       ),
                       SizedBox(
                         height: 20.0,

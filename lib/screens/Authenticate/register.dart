@@ -24,11 +24,11 @@ class _RegisterState extends State<Register> {
     return loading
         ? Loading()
         : Scaffold(
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.black,
             appBar: AppBar(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.blue[400],
               elevation: 0.0,
-              title: Text('Sign up'),
+              title: Text('Sign up to CW admin'),
               actions: <Widget>[
                 FlatButton.icon(
                     onPressed: () {
@@ -59,10 +59,10 @@ class _RegisterState extends State<Register> {
                             email = val;
                           });
                         },
-                        style: TextStyle(color: Colors.black),
+                        style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
                           hintText: "Bill No.",
-                          hintStyle: TextStyle(color: Colors.black54),
+                          hintStyle: TextStyle(color: Colors.white54),
                         ),
                       ),
                       SizedBox(
@@ -77,10 +77,10 @@ class _RegisterState extends State<Register> {
                             password = val;
                           });
                         },
-                        style: TextStyle(color: Colors.black),
+                        style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
                             hintText: "Password",
-                            hintStyle: TextStyle(color: Colors.black54)),
+                            hintStyle: TextStyle(color: Colors.white54)),
                       ),
                       SizedBox(
                         height: 20.0,
