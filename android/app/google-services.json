@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "505207615013",
+    "firebase_url": "https://coffeewala-app.firebaseio.com",
+    "project_id": "coffeewala-app",
+    "storage_bucket": "coffeewala-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505207615013:android:902baaa74b3b38b0bd19cc",
+        "android_client_info": {
+          "package_name": "com.example.coffeewala_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505207615013-k7bmsusnfb36pmhs6pes35qg1h88tgpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvhV1OctiseMXz7Fic7dOGsKTEviMD7j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505207615013-k7bmsusnfb36pmhs6pes35qg1h88tgpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505207615013:android:89f416b7fc0b2696bd19cc",
+        "android_client_info": {
+          "package_name": "com.example.coffeewala_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505207615013-k7bmsusnfb36pmhs6pes35qg1h88tgpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvhV1OctiseMXz7Fic7dOGsKTEviMD7j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505207615013-k7bmsusnfb36pmhs6pes35qg1h88tgpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
