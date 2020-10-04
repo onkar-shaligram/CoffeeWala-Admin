@@ -25,7 +25,7 @@ class Home extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, '/archives');
             }, 
-            icon: Icon(Icons.refresh), 
+            icon: Icon(Icons.refresh, color: Colors.white,), 
             label: Text("")),
            
           ],
