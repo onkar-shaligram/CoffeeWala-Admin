@@ -22,7 +22,8 @@ class BrewTile extends StatelessWidget {
           subtitle: Wrap(children: [
             Text('${brew.sugars} sugar packet(s) | '),
             Text(' ${brew.coffees} | '),
-            Text(' Snacks - ${brew.snacks}'),
+            Text(' Strength - ${brew.strength}'),
+            Text(' Snacks - ${brew.snacks}')
           ],),
           onTap: () {
             
