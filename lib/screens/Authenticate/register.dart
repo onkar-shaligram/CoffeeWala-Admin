@@ -61,7 +61,7 @@ class _RegisterState extends State<Register> {
                         },
                         style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
-                          hintText: "Bill No.",
+                          hintText: "Email",
                           hintStyle: TextStyle(color: Colors.white54),
                         ),
                       ),
