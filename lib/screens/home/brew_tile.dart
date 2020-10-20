@@ -44,7 +44,7 @@ showAlertDialog(BuildContext context) {
   Widget continueButton = FlatButton(
     child: Text("YES"),
     onPressed: () {
-      
+      Navigator.pop(context);
     },
   );
 
