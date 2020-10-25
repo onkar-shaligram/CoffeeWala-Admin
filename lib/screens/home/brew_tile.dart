@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:coffeewala_admin/models/brew.dart';
 
-class BrewTile extends StatelessWidget {
+int i=1;
+
+class BrewTile extends StatefulWidget {
   final Brew brew;
-  BrewTile({this.brew});
+  BrewTile({this.brew, index});
+  
+
+  @override
+  _BrewTileState createState() => _BrewTileState();
+}
+
+class _BrewTileState extends State<BrewTile> {
+  
 
   @override
   Widget build(BuildContext context) {
+    //i++;
     return Padding(
       padding: EdgeInsets.only(top: 8.0),
       child: Card(
@@ -14,14 +25,16 @@ class BrewTile extends StatelessWidget {
         child: ListTile(
           leading: CircleAvatar(
             radius: 25.0,
-            backgroundColor: Colors.brown[brew.strength],
+            backgroundColor: Colors.brown[widget.brew.strength],
           ),
-          title: Text(brew.name),
+          title: Text(widget.brew.name),
           subtitle: Wrap(children: [
-            Text('${brew.sugars} sugar packet(s) | '),
-            Text(' ${brew.coffees} | '),
-            Text(' ${brew.strength} |'),
-            Text(' Snacks - ${brew.snacks}'),
+            Text('${widget.brew.sugars} sugar packet(s) | '),
+            Text(' ${widget.brew.coffees} | '),
+            Text(' ${widget.brew.strength} |'),
+            Text(' Snacks - ${widget.brew.snacks} || '),
+            Text(' Order No - ${i++}', style: TextStyle(color: Colors.black),),
+            //Text(' OB - ${i--}', style: TextStyle(color: Colors.white),)
           ],),
           onTap: () {
             showAlertDialog(context);
