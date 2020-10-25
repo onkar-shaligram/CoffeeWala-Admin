@@ -2,9 +2,12 @@ import 'package:coffeewala_admin/models/brew.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'brew_tile.dart';
+//import 'brew_tile.dart';
 
 var i;
+ //List<int> _list = List.generate(20, (i) => i);
+  
+  
 
 class BrewList extends StatefulWidget {
   @override
@@ -12,6 +15,7 @@ class BrewList extends StatefulWidget {
 }
 
 class _BrewListState extends State<BrewList> {
+
   @override
   Widget build(BuildContext context) {
     final brews = Provider.of<List<Brew>>(context) ?? [];
@@ -37,6 +41,8 @@ class BrewTile extends StatefulWidget {
 }
 
 class _BrewTileState extends State<BrewTile> {
+
+  List<bool> _selected = List.generate(2000, (index) => false);
   
 
   @override
@@ -45,6 +51,7 @@ class _BrewTileState extends State<BrewTile> {
     return Padding(
       padding: EdgeInsets.only(top: 8.0),
       child: Card(
+        color: _selected[i] ? Colors.blue : null,
         margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
         child: ListTile(
           leading: CircleAvatar(
@@ -61,7 +68,40 @@ class _BrewTileState extends State<BrewTile> {
             //Text(' OB - ${i--}', style: TextStyle(color: Colors.white),)
           ],),
           onTap: () {
-            showAlertDialog(context);
+            // set up the buttons
+            Widget cancelButton = FlatButton(
+              child: Text("NO"),
+              onPressed: () {
+                setState(() => _selected[i] = false);
+                Navigator.pop(context);
+              },
+            );
+            Widget continueButton = FlatButton(
+              child: Text("YES"),
+              onPressed: () {
+                setState(() => _selected[i] = true);
+                Navigator.pop(context);
+              },
+            );
+
+            // set up the AlertDialog
+            AlertDialog alert = AlertDialog(
+              title: Text("Is this Order finished?"),
+              content:
+                  Text("This will send the card to archives list."),
+              actions: [
+                cancelButton,
+                continueButton,
+              ],
+            );
+
+            // show the dialog
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return alert;
+              },
+            );
           },
         ),
       ),
@@ -69,39 +109,4 @@ class _BrewTileState extends State<BrewTile> {
   }
 }
 
-
-showAlertDialog(BuildContext context) {
-  // set up the buttons
-  Widget cancelButton = FlatButton(
-    child: Text("NO"),
-    onPressed: () {
-      Navigator.pop(context);
-    },
-  );
-  Widget continueButton = FlatButton(
-    child: Text("YES"),
-    onPressed: () {
-      Navigator.pop(context);
-    },
-  );
-
-  // set up the AlertDialog
-  AlertDialog alert = AlertDialog(
-    title: Text("Is this Order finished?"),
-    content:
-        Text("This will send the card to archives list."),
-    actions: [
-      cancelButton,
-      continueButton,
-    ],
-  );
-
-  // show the dialog
-  showDialog(
-    context: context,
-    builder: (BuildContext context) {
-      return alert;
-    },
-  );
-}
 

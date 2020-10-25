@@ -15,18 +15,18 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.blue,
           title: Text("CW -- Admin"),
           elevation: 1.0,
-          actions: <Widget>[
-            FlatButton.icon(
-              onPressed: () async {
-                Navigator.pushNamed(context, '/archives');
-              },
-              icon: Icon(
-                Icons.refresh,
-                color: Colors.white,
-              ),
-              label: Text(""),
-            ),
-          ],
+          // actions: <Widget>[
+          //   FlatButton.icon(
+          //     onPressed: () async {
+          //       Navigator.pushNamed(context, '/archives');
+          //     },
+          //     icon: Icon(
+          //       Icons.refresh,
+          //       color: Colors.white,
+          //     ),
+          //     label: Text(""),
+          //   ),
+          // ],
         ),
         body: Container(
           child: BrewList(),
