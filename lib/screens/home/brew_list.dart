@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 //import 'brew_tile.dart';
-
-var i;
  //List<int> _list = List.generate(20, (i) => i);
-  
+  var i;
+  var p;
   
 
 class BrewList extends StatefulWidget {
@@ -24,6 +23,7 @@ class _BrewListState extends State<BrewList> {
       itemCount: brews.length,
       itemBuilder: (context, index) {
         i = index;
+        p=index;
         return BrewTile(brew: brews[index]);
         
       },
@@ -33,7 +33,7 @@ class _BrewListState extends State<BrewList> {
 
 class BrewTile extends StatefulWidget {
   final Brew brew;
-  BrewTile({this.brew, index});
+  BrewTile({this.brew});
   
 
   @override
@@ -42,16 +42,16 @@ class BrewTile extends StatefulWidget {
 
 class _BrewTileState extends State<BrewTile> {
 
-  List<bool> _selected = List.generate(2000, (index) => false);
+ List<bool> _selected = List.generate(200, (i) => false);
   
 
   @override
   Widget build(BuildContext context) {
-    //i++;
+    final x = p;
     return Padding(
       padding: EdgeInsets.only(top: 8.0),
       child: Card(
-        color: _selected[i] ? Colors.blue : null,
+        color: _selected[i] ? Colors.blue : Colors.white,
         margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
         child: ListTile(
           leading: CircleAvatar(
@@ -64,8 +64,7 @@ class _BrewTileState extends State<BrewTile> {
             Text(' ${widget.brew.coffees} | '),
             Text(' ${widget.brew.strength} |'),
             Text(' Snacks - ${widget.brew.snacks} || '),
-            Text(' Order No - $i', style: TextStyle(color: Colors.black),),
-            //Text(' OB - ${i--}', style: TextStyle(color: Colors.white),)
+            Text(' Order No - $x', style: TextStyle(color: Colors.black),),
           ],),
           onTap: () {
             // set up the buttons
@@ -80,6 +79,10 @@ class _BrewTileState extends State<BrewTile> {
               child: Text("YES"),
               onPressed: () {
                 setState(() => _selected[i] = true);
+                
+                setState(() {
+                  _selected[i] = true;
+                });
                 Navigator.pop(context);
               },
             );

@@ -24,7 +24,7 @@ class _SignInState extends State<SignIn> {
     return loading
         ? Loading()
         : Scaffold(
-            backgroundColor: Colors.black,
+            backgroundColor: Colors.white,
             appBar: AppBar(
               backgroundColor: Colors.blue[400],
               elevation: 0.0,
@@ -64,7 +64,7 @@ class _SignInState extends State<SignIn> {
                         ),
                         decoration: InputDecoration(
                             hintText: "Email",
-                            hintStyle: TextStyle(color: Colors.white54)),
+                            hintStyle: TextStyle(color: Colors.black45)),
                       ),
                       SizedBox(
                         height: 20.0,
@@ -81,7 +81,7 @@ class _SignInState extends State<SignIn> {
                         style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
                             hintText: "Password",
-                            hintStyle: TextStyle(color: Colors.white54)),
+                            hintStyle: TextStyle(color: Colors.black45)),
                       ),
                       SizedBox(
                         height: 20.0,
