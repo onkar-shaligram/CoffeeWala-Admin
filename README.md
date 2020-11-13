@@ -1,16 +1,37 @@
-# coffeewala_admin
+# CoffeeWala App Admin - Flutter
 
-A new Flutter project.
+# Aim of the Project
+To improve the Customer experience in Coffee Shops by Effectively transfering the Coffee Preferences from Billing Section to Barista's end. Approximately 25~30% increase in Sales is Expected.
+
+# Future Additions/Improvements
+Developing a Web application that could Show how much ammount of Coffee Sales happened, Increase/Decrease from Last month, what all Coffee Raw materials to Buy, etc.
 
 ## Getting Started
+**Note:** Make sure your Flutter environment is setup.
 
-This project is a starting point for a Flutter application.
+#### Installation
 
-A few resources to get you started if this is your first Flutter project:
+In the command terminal, run the following commands:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    $ git clone https://github.com/onkar-shaligram/CoffeeWala_app.git
+    $ flutter run
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Simulate for iOS
+#### Method One
+    
+    Open the project in Xcode from ios/Runner.xcodeproj.
+    Hit the play button.
+
+#### Method Two
+
+    Run the following command in your terminal.
+    $ open -a Simulator
+    $ flutter run
+
+# Simulate for Android
+
+    Make sure you have an Android emulator installed and running.
+    Run the following command in your terminal.
+    $ flutter run
+
+##### Check out Flutter’s online [documentation](http://flutter.io/) for help getting start with your Flutter project.
