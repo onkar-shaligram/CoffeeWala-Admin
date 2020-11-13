@@ -3,6 +3,9 @@
 # Aim of the Project
 To improve the Customer experience in Coffee Shops by Effectively transfering the Coffee Preferences from Billing Section to Barista's end. Approximately 25~30% increase in Sales is Expected.
 
+# Connected Apps
+This App is a Client Side application connected to Customer side at https://github.com/onkar-shaligram/CoffeeWala_app
+
 # Future Additions/Improvements
 Developing a Web application that could Show how much ammount of Coffee Sales happened, Increase/Decrease from Last month, what all Coffee Raw materials to Buy, etc.
 
