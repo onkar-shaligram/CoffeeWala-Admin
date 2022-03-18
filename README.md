@@ -15,12 +15,14 @@ This App is a Client Side application connected to Customer side at https://gith
 # Future Additions/Improvements
 Developing a Web application that could Show how much ammount of Coffee Sales happened, Increase/Decrease from Last month, what all Coffee Raw materials to Buy, etc.
 
+
 # Images
-![1](https://user-images.githubusercontent.com/57686423/159044003-789aaff5-f461-4869-ae28-d79d18b16bae.jpg)
-![2](https://user-images.githubusercontent.com/57686423/159044026-707d6e2b-1fa5-4f49-8027-b0899cdd97b9.jpg)
-![3](https://user-images.githubusercontent.com/57686423/159044036-d12c379c-815e-4411-a9b2-107c1265a8fe.jpg)
-![4](https://user-images.githubusercontent.com/57686423/159044042-62c0c0cc-dc46-48f2-b72e-37b0eac8608d.jpg)
-![5](https://user-images.githubusercontent.com/57686423/159044044-f4c94c6b-2862-4b5c-8f88-ee9f075e83b3.jpg)
+![a](https://user-images.githubusercontent.com/57686423/159045282-14213379-fecc-485f-8e27-4e6a1301f499.jpg)
+![b](https://user-images.githubusercontent.com/57686423/159045303-7a29214f-6a6e-4a66-bf1e-e182a645b2f0.jpg)
+![c](https://user-images.githubusercontent.com/57686423/159045310-8973d471-ae2a-49f0-8d79-ea880ed946ee.jpg)
+![d](https://user-images.githubusercontent.com/57686423/159045326-cd1c5486-1414-4874-b506-8494e6577fc8.jpg)
+![e](https://user-images.githubusercontent.com/57686423/159045334-9ce0c7ec-fecd-4cd2-83c4-640e1ab72e9f.jpg)
+![f](https://user-images.githubusercontent.com/57686423/159045354-d21632f8-a7e0-44ec-8b93-a737ec8a5281.jpg)
 
 
 ## Getting Started
