@@ -15,6 +15,14 @@ This App is a Client Side application connected to Customer side at https://gith
 # Future Additions/Improvements
 Developing a Web application that could Show how much ammount of Coffee Sales happened, Increase/Decrease from Last month, what all Coffee Raw materials to Buy, etc.
 
+# Images
+![1](https://user-images.githubusercontent.com/57686423/159044003-789aaff5-f461-4869-ae28-d79d18b16bae.jpg)
+![2](https://user-images.githubusercontent.com/57686423/159044026-707d6e2b-1fa5-4f49-8027-b0899cdd97b9.jpg)
+![3](https://user-images.githubusercontent.com/57686423/159044036-d12c379c-815e-4411-a9b2-107c1265a8fe.jpg)
+![4](https://user-images.githubusercontent.com/57686423/159044042-62c0c0cc-dc46-48f2-b72e-37b0eac8608d.jpg)
+![5](https://user-images.githubusercontent.com/57686423/159044044-f4c94c6b-2862-4b5c-8f88-ee9f075e83b3.jpg)
+
+
 ## Getting Started
 **Note:** Make sure your Flutter environment is setup.
 
